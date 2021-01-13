@@ -10,7 +10,8 @@ async function jokeBtn(e) {
     },
   });
   let joke = await respond.json();
-  console.log(joke);
+
+  textJoke.innerHTML = joke.joke;
 
   e.preventDefault();
 }
